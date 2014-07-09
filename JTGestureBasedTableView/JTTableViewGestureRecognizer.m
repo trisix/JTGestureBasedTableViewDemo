@@ -98,6 +98,10 @@ CGFloat const JTTableViewRowAnimationDuration          = 0.25;       // Rough gu
     }
 }
 
+- (void)setMinimumPressDuration:(CFTimeInterval)minimumPressDuration {
+  self.longPressRecognizer.minimumPressDuration = minimumPressDuration;
+}
+
 #pragma mark Logic
 
 - (void)commitOrDiscardCell {
